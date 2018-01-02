@@ -61,7 +61,7 @@ label {
 }  
 .less251 label{
     min-width:150px;
-    padding-left:215px;
+    padding-left:125%;
 }
   /* Floating column for inputs: 75% width */
 .less75 {

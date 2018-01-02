@@ -40,16 +40,16 @@
                 
                 <div class="less251">
                             <label><input type="checkbox" name="remember" {{ old('remember') ? 'checked' : ''}}> Remember </label>
-                    </div>
-                    <div class="less75">
-                        <button class="button2" type="submit" class="btn btn-primary">
-                            Login
-                        </button>
-                    </div>
-                    <br><br><br>
-                        <a class="forgotpassword" href="{{ url('/password/reset') }}">
-                            Forgot Your Password?
-                        </a>
+                </div>
+                <div class="less75">
+                    <button class="button2" type="submit" class="btn btn-primary">
+                        Login
+                    </button>
+                </div>
+                <br><br><br>
+                    <a class="forgotpassword" href="{{ url('/password/reset') }}">
+                        Forgot Your Password?
+                    </a>
             </form>
         </div>
 
