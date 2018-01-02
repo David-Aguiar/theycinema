@@ -23,7 +23,7 @@ class sendEmailController extends Controller
         Mail::send('email.payEmail', $data, function($message){
             $message->from('delaroia123987@gmail.com');
             $message->to( Auth::user()->email);
-            $message->subject('Confirmação da Compra');
+            $message->subject('Comprovativo de Transação');
         });
         return redirect('/');
     }
