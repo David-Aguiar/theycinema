@@ -108,7 +108,6 @@
                     </ul>
               </footer>
     @yield('content2')
-<!-- DavidScripts -->
             <script>
                function clickImage(){
                 window.location = '/';
@@ -116,13 +115,11 @@
             </script>
             <script src="/js/app.js"></script>
 
-            <!-- david jquery -->
             <script
                 src="https://code.jquery.com/jquery-3.2.1.min.js"
                 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
                 crossorigin="anonymous">
             </script> 
-            <!-- david axios -->
             <script 
                 src="https://unpkg.com/axios/dist/axios.min.js">
             </script>

@@ -65,7 +65,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        Session::flash('status','Registered!! but verify your email ti activate your acccount');
+        Session::flash('status','Registered!! but verify your email to activate your acccount');
        $user= User::create([
             'lastname' => $data['lastname'],
             'name' => $data['name'],
