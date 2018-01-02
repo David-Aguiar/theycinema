@@ -16,7 +16,6 @@ class DatabaseSeeder extends Seeder
         $this->call('PositionsSeeder');
         $this->call('AdminSeeder');
         $this->call('keySeeder');
-        $this->call('SalasCinemaSeeder');
         
     }
 }
