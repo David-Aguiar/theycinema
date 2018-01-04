@@ -5,7 +5,7 @@
 <div id="slider">  
         <figure>  
         @foreach($movies as $movie)
-        <li><img src= {{$movie -> UrlMovie}} ></li>
+        <li><a href="movieinfo/{{ $movie-> IdMovie }}"><img src= {{$movie -> UrlMovie}} ></a></li>
         @endforeach  
         </figure>        
     </div>
@@ -16,15 +16,15 @@
 <br>
 
 <div class="listMovie1">
-<h1>Cartaz</h1>
+<h1>Posters</h1>
 <ul>
     @foreach($movies as $movie)
     <li>
         <a href="movieinfo/{{ $movie-> IdMovie }}"><img src= {{$movie -> UrlMovie}} ></a>
-        <h4>{{$movie -> TitleMovie}}</h4>
+        <a  class="h_title" href="movieinfo/{{ $movie-> IdMovie }}"> {{$movie -> TitleMovie}}</a>
         <br><br><br><br><br>  
     </li>
-    @endforeach  
+    @endforeach
 
 </ul>
 </div>

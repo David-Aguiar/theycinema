@@ -47,9 +47,9 @@
             </div>
             <ul>
                 <li><a class="first" href="/">Home</a></li>
-                <li><a href="/parceiros">Parceiros</a></li>
-                <li><a href="/localizacao">Localização</a></li>
-                <li><a href="/team">Equipa</a></li>
+                <li><a href="/parceiros">Partners</a></li>
+                <li><a href="/localizacao">Location</a></li>
+                <li><a href="/team">Team</a></li>
                 @if(Auth::check() && Auth::user()->usertype=="admin") 
                 <li><a href="{{ url('/admin')}}"> Admin Area </a></li>
                 @endif       
@@ -64,31 +64,31 @@
         <section class=middledireito>
 
             <table class="middlerighttable">
-                <th class="thh" colspan="2"><strong> Mais esperados</strong><th>  
+                <th class="thh" colspan="2"><strong> Most expected</strong><th>  
                 <tr>
                     <td class="tdwidth" ><a class="iconmen1" href="#" > <img class="iconn1" src="/images/img1.jpg"></a>
                         <a href="#" ><img class="iconn2" src="/images/icon.png" ></a>
                     </td>         
-                    <td><a class="iconmen" href="#">Vingadores da Guerra Infinita</a></td>
+                    <td><a class="iconmen" href="#">The Amazing Spider-Man</a></td>
                 </tr>
                 <tr>
-                    <td class="tdwidth" ><a href="#">A Forma da Água </a></td>
+                    <td class="tdwidth" ><a href="#">Harry Potter and the Order of the Phoenix </a></td>
                     <td class="vv"><a href="#"><img class="iconn" src="/images/icon.png"> </a></td>
                 </tr>
                 <tr>
-                    <td class="tdwidth"><a href="#">Cinquenta Tons de Liberdade</a></td>
+                    <td class="tdwidth"><a href="#">Insidious 2</a></td>
                     <td class="vv"><a href="#"><img class="iconn" src="/images/icon.png"> </a></td>
                 </tr>
                 <tr>
-                    <td class="tdwidth"><a href="#">Jumanji: Bem-Vindo à Selva </a></td>
+                    <td class="tdwidth"><a href="#">Jumanji</a></td>
                     <td class="vv"><a href="#"><img class="iconn" src="/images/icon.png"> </a></td>
                 </tr>
                 <tr>
-                    <td class="tdwidth"><a href="#">Vingadores da Guerra Infinita </a></td>
+                    <td class="tdwidth"><a href="#">Logan</a></td>
                     <td class="vv"><a href="#"><img class="iconn" src="/images/icon.png"> </a></td>
                 </tr>
                 <tr>
-                    <td class="tdwidth"><a href="#">Cinquenta Tons de Liberdade</a></td>
+                    <td class="tdwidth"><a href="#">Harry Potter</a></td>
                     <td class="vv"><a href="#"><img class="iconn" src="/images/icon.png"> </a></td>
                 </tr>
 
@@ -98,8 +98,8 @@
                 <footer>
                     <ul class="footerr">
                         <li>- - - Contact Us! - - -</li>
-                        <li>Seca@student.uma.pt</li>
-                        <li>123 Street Anywhere, USA</li>
+                        <li>theycinema@team.uma.pt</li>
+                        <li>54 Street Maia, Portugal</li>
                     </ul>
                     <ul class="footerr1">
                         <li><a href="http://facebook.com" target="_blank" ><img class="iconn3" src="/images/facebook.png" ></a></li>

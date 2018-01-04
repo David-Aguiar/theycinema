@@ -3,7 +3,7 @@
 @section('content')
 
 <div id="container">  
-    <img src="/images/cinemalocalizacao.png">
+    <img class="l_img" src="/images/cinemalocalizacao.png">
     <p>
     Address: Caminho da Queimada de Cima nº 203
     <br>

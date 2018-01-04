@@ -10,6 +10,11 @@
             </form>                 
             <div class= "MoviesSystem">
                <div>
+                    <table class="ad_table">
+                        <tr class="ad_tr">
+                            <th class="ad_th">Movie</th><th class="ad_th1">Room</th>
+                        </tr>
+                    </table>
                     <button class="button11" onclick = "ConectMoviesSalas()"> Connect</button>
                     <select required id = "id_movie">
                         @foreach($movies as $movie1)
@@ -18,16 +23,16 @@
                     </select>
                     <select required id = "id_sala">
                         @foreach($salas as $sala)
-                            <option name = "idRoom" value= "{{$sala->id}}">{{ $sala->sala_nome}}</option>
+                            <option name = "idRoom" value= "{{$sala->id}}">{{ $sala->id}}</option>
                         @endforeach
                     </select>                   
                 </div>
                 <hr>
-                <h2>Deletar Filmes</h2>
+                <h2>Delete Movies</h2>
                 <ol class="ola">
                     @foreach($movies as $movie)
                         <li class="exp">
-                            <button onclick="deleteMovie('{{$movie->IdMovie}}')" class= "btn btn-primary" href="javascript:void(0)">DELETE Movie</button>
+                            <button onclick="deleteMovie('{{$movie->IdMovie}}')" class= "btn btn-primary" href="javascript:void(0)">Delete Movie</button>
                             <u>{{ $movie->TitleMovie}}</u>
                         </li>
                     @endforeach
@@ -36,16 +41,17 @@
             </div> 
             <div>
                  <hr>
-                <h2>Filmes - Salas</h2>
-                <ol class="ola1">
+                <h2>Movies - Rooms</h2>
+                <ol class="ola">
                     @foreach($movies as $movie)
                         <br>
-                        <li class="exp1">
-                        <button onclick="LimpaSala('{{$movie->salas_id}}')" class= "btn btn-primary" href="javascript:void(0)">Limpar Sala</button>
-                        <span class="titulasala">{{$movie->TitleMovie}}</span> - Sala:  <b>{{$movie->salas_id}}</b>
+                        <li class="exp">
+                        <button class="button11" onclick="LimpaSala('{{$movie->salas_id}}')" class= "btn btn-primary" href="javascript:void(0)">Clean Room</button>
+                        <span class="titulasala">{{$movie->TitleMovie}}</span> - Room:  <b>{{$movie->salas_id}}</b>
                         </li>
                     @endforeach
                     </ol>
+                    <br>
             </div>
             <hr>
             <br> <br>
